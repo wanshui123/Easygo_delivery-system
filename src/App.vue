@@ -1,0 +1,21 @@
+<template>
+  <div class="app">
+    <router-view />
+    <footer-guide v-show="$route.meta.showFooter"></footer-guide>
+  </div>
+</template>
+
+<script>
+import FooterGuide from "./components/FooterGuide/FooterGuide.vue";
+export default {
+  components: {
+    FooterGuide,
+  },
+};
+</script>
+
+<style lang="stylus" rel="stylesheet/stylus">
+.app {
+  color: red;
+}
+</style>
